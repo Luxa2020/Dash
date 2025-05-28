@@ -107,4 +107,4 @@ st.download_button(
     mime="text/csv"
 )
 
-st.write("Team Hatter yii")
+st.subheader("Team Hatter yii")
