@@ -95,7 +95,7 @@ fig2 = px.pie(
     names="Genre",
     title="📚 Répartition des livres par genre"
 )
-  st.plotly_chart(fig2, use_container_width=True)
+st.plotly_chart(fig2, use_container_width=True)
 # === Tableau de données filtrées
 st.subheader(" 📊Données filtrées")
 st.dataframe(df_filtered, use_container_width=True)
