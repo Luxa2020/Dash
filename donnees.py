@@ -55,8 +55,8 @@ df_filtered = df[
 
 
 # === TITRE
-    st.title("📊 Dashboard des ventes de livres")
-    st.markdown("Analyse interactive basée sur les données des livres les plus vendus.")
+st.title("📊 Dashboard des ventes de livres")
+st.markdown("Analyse interactive basée sur les données des livres les plus vendus.")
 
 # === KPIs dynamiques
   st.subheader("📈 Indicateurs Clés de Performance (KPIs)")
