@@ -108,13 +108,6 @@ st.download_button(
     mime="text/csv"
 )
 st.subheader("Team Hatter yii Day Daww rekk")
-# Introduction générale
-st.sVous pouvez naviguer dans le menu latéral pour :
-    - Explorer les KPIs
-    - Filtrer les données
-    - Visualiser les résultats
-    - Télécharger les données
-    """)
 
     # Objectifs
 st.subheader("🚀 Objectifs")
