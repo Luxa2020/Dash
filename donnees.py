@@ -59,25 +59,25 @@ st.title("📊 Dashboard des ventes de livres")
 st.markdown("Analyse interactive basée sur les données des livres les plus vendus.")
 
 # === KPIs dynamiques
-  st.subheader("📈 Indicateurs Clés de Performance (KPIs)")
-  col1, col2, col3, col4 = st.columns(4)
+st.subheader("📈 Indicateurs Clés de Performance (KPIs)")
+col1, col2, col3, col4 = st.columns(4)
 
 # Calculs
-  total_livres = len(df_filtered)
-  total_ventes = int(df_filtered["Sales"].sum())
+total_livres = len(df_filtered)
+total_ventes = int(df_filtered["Sales"].sum())
 
-  livre_top = df_filtered.sort_values(by="Sales", ascending=False).iloc[0]["Book"] if total_livres > 0 else "-"
-  auteur_top = df_filtered["Author"].value_counts().idxmax() if total_livres > 0 else "-"
+livre_top = df_filtered.sort_values(by="Sales", ascending=False).iloc[0]["Book"] if total_livres > 0 else "-"
+auteur_top = df_filtered["Author"].value_counts().idxmax() if total_livres > 0 else "-"
 
-  col1.metric("📚 Nombre de livres", total_livres)
-  col2.metric("💰 Ventes totales", f"{total_ventes:,} Exemplaires")
-  col3.metric("🏆 Livre le + vendu", livre_top)
-  col4.metric("✍️ Auteur le + prolifique", auteur_top)
+col1.metric("📚 Nombre de livres", total_livres)
+col2.metric("💰 Ventes totales", f"{total_ventes:,} Exemplaires")
+col3.metric("🏆 Livre le + vendu", livre_top)
+col4.metric("✍️ Auteur le + prolifique", auteur_top)
 
-  st.markdown("---")
+st.markdown("---")
 
 # === Graphiques interactifs
-  st.subheader("📊 Visualisations")
+st.subheader("📊 Visualisations")
 
 # Graphique 1 : Nombre de livres par année
 fig1 = px.histogram(
@@ -107,5 +107,4 @@ st.download_button(
     file_name="livres_filtres.csv",
     mime="text/csv"
 )
-
 st.subheader("Team Hatter yii Day Daww rekk")
