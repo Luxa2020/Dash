@@ -109,8 +109,25 @@ st.download_button(
 )
 st.subheader("Team Hatter yii Day Daww rekk")
 # Introduction générale
-    st.subheader("🎯 Objectif du projet")
-    st.write("""
+st.sVous pouvez naviguer dans le menu latéral pour :
+    - Explorer les KPIs
+    - Filtrer les données
+    - Visualiser les résultats
+    - Télécharger les données
+    """)
+
+    # Objectifs
+st.subheader("🚀 Objectifs")
+st.markdown("""
+    - Identifier les **livres les plus performants**
+    - Comprendre la **répartition par genre et par pays**
+    - Suivre l’évolution du marché **dans le temps**
+    - Fournir un outil interactif et facile à utiliser pour l’analyse des ventes
+    """)
+
+
+st.subheader("🎯 Objectif du projet")
+st.write("""
     Ce projet vise à explorer et analyser les données de vente de livres à travers le monde. 
     Nous utilisons des outils de visualisation pour extraire des insights à partir de variables telles que :
     - Le titre du livre
@@ -124,8 +141,8 @@ st.subheader("Team Hatter yii Day Daww rekk")
     """)
 
     # Présentation des données
-    st.subheader("📦 Description des données")
-    st.write("""
+st.subheader("📦 Description des données")
+st.write("""
     Les données que nous utilisons contiennent les colonnes suivantes :
     - `Titre` : nom du livre
     - `Auteur` : nom de l’auteur
@@ -139,8 +156,8 @@ st.subheader("Team Hatter yii Day Daww rekk")
     """)
 
     # Qu'est-ce qu'un KPI
-    st.subheader("📈 Que sont les KPIs ?")
-    st.write("""
+st.subheader("📈 Que sont les KPIs ?")
+st.write("""
     Les **KPI** (*Key Performance Indicators* ou **Indicateurs Clés de Performance**) sont des **mesures chiffrées** 
     qui permettent d’évaluer l’efficacité d’une activité ou d’un projet par rapport à des objectifs définis.
 
@@ -154,8 +171,8 @@ st.subheader("Team Hatter yii Day Daww rekk")
     """)
 
     # Importance de bien choisir les KPI
-    st.subheader("📌 Pourquoi bien choisir ses KPIs ?")
-    st.write("""
+st.subheader("📌 Pourquoi bien choisir ses KPIs ?")
+st.write("""
     Le choix des KPI détermine **la qualité de votre analyse**. 
     Un bon KPI doit être :
     - **Spécifique** à l’objectif
@@ -167,8 +184,8 @@ st.subheader("Team Hatter yii Day Daww rekk")
     """)
 
     # Documentation du projet
-    st.subheader("🗂️ Documentation du projet")
-    st.write("""
+st.subheader("🗂️ Documentation du projet")
+st.write("""
     - 📁 Fichiers sources : `livres.csv`
     - 🧰 Bibliothèques utilisées : `Pandas`, `Plotly`, `Streamlit`
     - 📊 Visualisations : barres, histogrammes, camemberts, cartes
@@ -182,8 +199,8 @@ Vous pouvez naviguer dans le menu latéral pour :
     """)
 
     # Objectifs
-    st.subheader("🚀 Objectifs")
-    st.markdown("""
+st.subheader("🚀 Objectifs")
+st.markdown("""
     - Identifier les **livres les plus performants**
     - Comprendre la **répartition par genre et par pays**
     - Suivre l’évolution du marché **dans le temps**
