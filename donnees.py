@@ -80,32 +80,32 @@ st.markdown("Analyse interactive basée sur les données des livres les plus ven
   st.subheader("📊 Visualisations")
 
 # Graphique 1 : Nombre de livres par année
-  fig1 = px.histogram(
-      df_filtered,
-      x="FirstPublished",
-      nbins=20,
-      title="📅 Nombre de livres publiés par année",
-      labels={"FirstPublished": "Année"}
-  )
-  st.plotly_chart(fig1, use_container_width=True)
+fig1 = px.histogram(
+    df_filtered,
+    x="FirstPublished",
+    nbins=20,
+    title="📅 Nombre de livres publiés par année",
+    labels={"FirstPublished": "Année"}
+)
+st.plotly_chart(fig1, use_container_width=True)
 
 # Graphique 2 : Répartition par genre
-  fig2 = px.pie(
-      df_filtered,
-      names="Genre",
-      title="📚 Répartition des livres par genre"
-  )
+fig2 = px.pie(
+    df_filtered,
+    names="Genre",
+    title="📚 Répartition des livres par genre"
+)
   st.plotly_chart(fig2, use_container_width=True)
 # === Tableau de données filtrées
-  st.subheader(" 📊Données filtrées")
-  st.dataframe(df_filtered, use_container_width=True)
+st.subheader(" 📊Données filtrées")
+st.dataframe(df_filtered, use_container_width=True)
 
 # === Bouton de téléchargement
-  st.download_button(
-      label=" Télécharger les données filtrées",
-      data=df_filtered.to_csv(index=False),
-      file_name="livres_filtres.csv",
-      mime="text/csv"
-  )
+st.download_button(
+    label=" Télécharger les données filtrées",
+    data=df_filtered.to_csv(index=False),
+    file_name="livres_filtres.csv",
+    mime="text/csv"
+)
 
-  st.subheader("Team Hatter yii Day Daww rekk")
+st.subheader("Team Hatter yii Day Daww rekk")
