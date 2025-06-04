@@ -15,22 +15,22 @@ st.sidebar.header(" Menu")
 # Auteur
 auteurs = st.sidebar.multiselect(
     "Choisir un ou plusieurs auteurs",
-    options=df["Author"].unique()[5],
-    default=df["Author"].unique()[5]
+    options=df["Author"].unique(),
+    default=df["Author"].unique()
 )
 
 # Langue
 langues = st.sidebar.multiselect(
     "Langue originale",
-    options=df["OriginalLanguage"].unique()[5],
-    default=df["OriginalLanguage"].unique()[5]
+    options=df["OriginalLanguage"].unique(),
+    default=df["OriginalLanguage"].unique()
 )
 
 # Genre
 genres = st.sidebar.multiselect(
     "Genres littéraires",
-    options=df["Genre"].unique()[5],
-    default=df["Genre"].unique()[5]
+    options=df["Genre"].unique(),
+    default=df["Genre"].unique()
 )
 
 # Année de publication
